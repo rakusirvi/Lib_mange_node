@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const PORT = 5000;
+const PORT = 3000;
 
 app.use(express.json());
 
@@ -14,8 +14,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/books", (req, res) => {
+  res.json({
+    message: "home Page",
+  });
+});
+
 app.listen(PORT, () => {
-  console.log(
-    `Server is running on port this is the port number http://localhost:${PORT}`,
-  );
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
