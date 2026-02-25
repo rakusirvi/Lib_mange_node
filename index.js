@@ -20,6 +20,12 @@ app.get("/books", (req, res) => {
   });
 });
 
+app.use((req, res) => {
+  res.status(200).json({
+    message: "not null",
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

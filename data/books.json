@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Algorithm",
+    "author": "Arjun Mehta",
+    "genre": "Technology",
+    "publishedYear": 2019,
+    "price": 499,
+    "inStock": true,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "title": "Whispers of the Forgotten Forest",
+    "author": "Elena Rodriguez",
+    "genre": "Fantasy",
+    "publishedYear": 2015,
+    "price": 699,
+    "inStock": false,
+    "rating": 4.2
+  },
+  {
+    "id": 3,
+    "title": "Midnight in Kyoto",
+    "author": "Hiroshi Tanaka",
+    "genre": "Mystery",
+    "publishedYear": 2021,
+    "price": 550,
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "title": "The Quantum Horizon",
+    "author": "Sophia Carter",
+    "genre": "Science Fiction",
+    "publishedYear": 2018,
+    "price": 799,
+    "inStock": true,
+    "rating": 4.3
+  },
+  {
+    "id": 5,
+    "title": "Echoes of the Past",
+    "author": "Daniel Okafor",
+    "genre": "Historical Fiction",
+    "publishedYear": 2012,
+    "price": 450,
+    "inStock": false,
+    "rating": 4.0
+  },
+  {
+    "id": 6,
+    "title": "Code & Coffee",
+    "author": "Riya Sharma",
+    "genre": "Self-Help",
+    "publishedYear": 2023,
+    "price": 399,
+    "inStock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 7,
+    "title": "The Last Empire",
+    "author": "Marcus Liu",
+    "genre": "Adventure",
+    "publishedYear": 2017,
+    "price": 620,
+    "inStock": true,
+    "rating": 4.1
+  },
+  {
+    "id": 8,
+    "title": "Digital Nomad Diaries",
+    "author": "Isabella Rossi",
+    "genre": "Travel",
+    "publishedYear": 2020,
+    "price": 520,
+    "inStock": true,
+    "rating": 4.4
+  },
+  {
+    "id": 9,
+    "title": "The Mindful Developer",
+    "author": "Noah Williams",
+    "genre": "Technology",
+    "publishedYear": 2022,
+    "price": 580,
+    "inStock": false,
+    "rating": 4.8
+  },
+  {
+    "id": 10,
+    "title": "Beneath Crimson Skies",
+    "author": "Amara Johnson",
+    "genre": "Romance",
+    "publishedYear": 2016,
+    "price": 470,
+    "inStock": true,
+    "rating": 3.9
+  }
+]
