@@ -1,0 +1,27 @@
+{
+  "name": "lib_mange_node",
+  "version": "1.0.0",
+  "description": "GET:this is used inorder to get all the books in the system POST:Register a new user",
+  "homepage": "https://github.com/rakusirvi/Lib_mange_node#readme",
+  "bugs": {
+    "url": "https://github.com/rakusirvi/Lib_mange_node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakusirvi/Lib_mange_node.git"
+  },
+  "license": "ISC",
+  "author": "Rakesh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
