@@ -52,15 +52,15 @@ GET:get all issued books with their Amount
 
 ## Commands
 
-npm init
-npm i express
-npm i nodemon --save-dev
-add >>
+> > npm init
+> > npm i express
+> > npm i nodemon --save-dev
+> > add
 
-"scripts": {
-"start": "node index.js",
-"dev": "nodemon index.js"
-},
+> >     "scripts": {
+> >      "start": "node index.js",
+> >      "dev": "nodemon index.js"
+> >     },
 
-npm i
-npm run dev
+> > npm i
+> > npm run dev
