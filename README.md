@@ -36,7 +36,7 @@ DELETE: Delete a Book by their ID
 
 GET:Get all the Issued Books
 
-## /books/issued/withfile
+## /books/issued/withfine
 
 GET:get all issued books with their Amount
 
