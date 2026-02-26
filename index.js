@@ -1,7 +1,12 @@
 const express = require("express");
 
-const app = express();
+const users = require("./data/users.json");
+const books = require("./data/books.json");
 
+const usersRoutes = require("./routes/users");
+const booksRoutes = require("./routes/books");
+
+const app = express();
 const PORT = 3000;
 
 app.use(express.json());
@@ -9,22 +14,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Home Page",
-    message2: "This is the second message",
-    message3: "This is the third message",
   });
 });
 
-app.get("/books", (req, res) => {
-  res.json({
-    message: "home Page",
-  });
-});
-
-app.use((req, res) => {
-  res.status(200).json({
-    message: "not null",
-  });
-});
+app.use("/users", usersRoutes);
+app.use("/books", booksRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
