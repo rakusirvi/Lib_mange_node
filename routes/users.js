@@ -1,5 +1,6 @@
 const express = require("express");
 const users = require("../data/users.json");
+const { get } = require("./books");
 
 const app = express.Router();
 
@@ -168,6 +169,80 @@ app.delete("/:id", (req, res) => {
     success: true,
     data: updatedUsers,
     message: "User Deleted SuccessFully",
+  });
+});
+
+/*
+Route : /users/subsciption-details/:id
+  Method GET
+  Description : Get All the Subscription Details by their ID
+  Access : public 
+  Parameters: ID
+*/
+
+app.get("/subsciption-details/:id", (req, res) => {
+  const { id } = req.params;
+
+  //find the user by their id
+  const user = users.find((each) => each.id == id);
+  if (!user) {
+    return res.status(404).json({
+      success: false,
+      message: "No user with Subscription",
+    });
+  }
+
+  // Extract the Subscription details
+
+  const getDateInDays = (data = "") => {
+    let date;
+    if (data) {
+      date = new Date(data);
+    } else {
+      date = new Date();
+    }
+    let days = Math.floor(date.getTime() / (1000 * 60 * 60 * 24));
+    return days;
+  };
+
+  const subscriptionType = (date) => {
+    if (user.subscriptionType.toLowerCase() === "basic") {
+      date = date + 30;
+    } else if (user.subscriptionType.toLowerCase() === "standard") {
+      date = date + 100;
+    } else if (user.subscriptionType.toLowerCase() === "premium") {
+      date = date + 365;
+    }
+    return date;
+  };
+
+  // subscription Callculation
+  // january 1, 1970 UTC // milliseec
+  let returningDate = getDateInDays(user.returnDate);
+  let currentDate = getDateInDays();
+  let subscriptionDate = getDateInDays(user.subscriptionDate);
+  let subscriptionExp = subscriptionType(subscriptionDate);
+
+  const data = {
+    ...user,
+    subscriptionExpired: subscriptionExp < currentDate,
+    daysLeftForExpired:
+      subscriptionExp < currentDate
+        ? "Subscription Expired"
+        : subscriptionExp - currentDate,
+    returnDate:
+      returningDate < currentDate ? "Book is OverDue" : user.returnDate,
+    fine:
+      returningDate < currentDate
+        ? subscriptionExp <= currentDate
+          ? 200
+          : 100
+        : 0,
+  };
+
+  res.status(200).json({
+    success: true,
+    data: data,
   });
 });
 

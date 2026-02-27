@@ -4,87 +4,87 @@
     "name": "Rohan",
     "surname": "Sharma",
     "email": "rohan.sharma1@example.com",
-    "issuedBooks": ["The Silent Algorithm", "Midnight in Kyoto"],
-    "issuedDate": "2026-01-10",
-    "returnDate": "2026-01-24",
+    "issuedBooks": 2,
+    "issuedDate": "01/10/26",
+    "returnDate": "01/24/26",
     "subscriptionType": "Premium",
-    "subscriptionDate": "2025-12-15"
+    "subscriptionDate": "12/15/25"
   },
   {
     "id": 2,
     "name": "Ananya",
     "surname": "Verma",
     "email": "ananya.verma2@example.com",
-    "issuedBooks": ["Echoes of the Past"],
-    "issuedDate": "2026-02-01",
-    "returnDate": "2026-02-14",
+    "issuedBooks": 1,
+    "issuedDate": "02/01/26",
+    "returnDate": "02/14/26",
     "subscriptionType": "Standard",
-    "subscriptionDate": "2025-11-20"
+    "subscriptionDate": "11/20/25"
   },
   {
     "id": 3,
     "name": "Kabir",
     "surname": "Singh",
     "email": "kabir.singh3@example.com",
-    "issuedBooks": [],
+    "issuedBooks": 0,
     "issuedDate": null,
     "returnDate": null,
     "subscriptionType": "Basic",
-    "subscriptionDate": "2026-01-05"
+    "subscriptionDate": "01/05/26"
   },
   {
     "id": 4,
     "name": "Meera",
     "surname": "Patel",
     "email": "meera.patel4@example.com",
-    "issuedBooks": ["Digital Nomad Diaries", "The Quantum Horizon"],
-    "issuedDate": "2026-02-12",
-    "returnDate": "2026-02-26",
+    "issuedBooks": 0,
+    "issuedDate": "02/12/26",
+    "returnDate": "02/26/26",
     "subscriptionType": "Premium",
-    "subscriptionDate": "2025-10-10"
+    "subscriptionDate": "10/10/25"
   },
   {
     "id": 5,
     "name": "Arjun",
     "surname": "Reddy",
     "email": "arjun.reddy5@example.com",
-    "issuedBooks": ["The Last Empire"],
-    "issuedDate": "2026-02-18",
-    "returnDate": "2026-03-03",
+    "issuedBooks": 0,
+    "issuedDate": "02/18/26",
+    "returnDate": "03/03/26",
     "subscriptionType": "Standard",
-    "subscriptionDate": "2025-09-01"
+    "subscriptionDate": "09/01/25"
   },
   {
     "id": 6,
     "name": "Sneha",
     "surname": "Nair",
     "email": "sneha.nair6@example.com",
-    "issuedBooks": [],
+    "issuedBooks": 0,
     "issuedDate": null,
     "returnDate": null,
     "subscriptionType": "Basic",
-    "subscriptionDate": "2026-02-10"
+    "subscriptionDate": "02/10/26"
   },
   {
     "id": 7,
     "name": "Vikram",
     "surname": "Malhotra",
     "email": "vikram.malhotra7@example.com",
-    "issuedBooks": ["Whispers of the Forgotten Forest"],
-    "issuedDate": "2026-01-25",
-    "returnDate": "2026-02-08",
+    "issuedBooks": 0,
+    "issuedDate": "01/25/26",
+    "returnDate": "02/08/26",
     "subscriptionType": "Standard",
-    "subscriptionDate": "2025-12-01"
+    "subscriptionDate": "12/01/25"
   },
   {
     "id": 8,
     "name": "Ishita",
     "surname": "Kapoor",
     "email": "ishita.kapoor8@example.com",
-    "issuedBooks": ["Code & Coffee"],
-    "issuedDate": "2026-02-20",
-    "returnDate": "2026-03-05",
+    "issuedBooks": 0,
+    "issuedDate": "02/20/26",
+    "returnDate": "03/05/26",
     "subscriptionType": "Premium",
-    "subscriptionDate": "2025-08-18"
+    "subscriptionDate": "08/18/25"
   }
 ]

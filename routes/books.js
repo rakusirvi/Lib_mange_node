@@ -1,7 +1,7 @@
 const express = require("express");
 
 const books = require("../data/books.json");
-
+const users = require("../data/users.json");
 const app = express.Router();
 
 /*
@@ -34,7 +34,7 @@ app.get("/:id", (req, res) => {
   if (!book) {
     return res.status(404).json({
       success: false,
-      message: "User Not Found",
+      message: "Books Not Found",
     });
   }
   res.status(200).json({
@@ -160,6 +160,43 @@ app.delete("/:id", (req, res) => {
     success: true,
     message: "Deleted Successfully",
     data: updatedBooks,
+  });
+});
+
+/*
+Route : /books/Issued
+  Method GET
+  Description : GET all issued books
+  Access : public 
+  Parameters: None
+*/
+
+app.get("/issued/for-users", (req, res) => {
+  const userWithIssuedBooks = users.filter((each) => {
+    if (each.issuedBooks > 0) {
+      return each;
+    }
+  });
+
+  const issuedBooks = [];
+  userWithIssuedBooks.forEach((each) => {
+    const book = books.find((book) => book.id === each.issuedBooks);
+    book.issuedBy = each.name;
+    book.issuedDate = each.issuedDate;
+    book.returnDate = each.returnDate;
+    issuedBooks.push(book);
+  });
+
+  if (!issuedBooks) {
+    return res.status(404).json({
+      success: false,
+      message: "Not Books Issued",
+    });
+  }
+
+  res.status(200).json({
+    success: this.true,
+    data: issuedBooks,
   });
 });
 
