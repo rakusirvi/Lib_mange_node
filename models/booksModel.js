@@ -33,6 +33,7 @@ const booksSchema = new Schema(
 );
 
 module.exports = mongoose.model("Book", booksSchema);
+
 // "name: "The Silent Algorithm",
 // "author": "Arjun Mehta",
 // "genre": "Technology",

@@ -274,6 +274,8 @@ exports.subcriptionDetailsID = async (req, res) => {
     } else if (user.subscriptionType === "Basic") {
       days = days + 30;
     }
+
+    return days;
   };
 
   const returnDateInDays = getDateInDays(user.returnDate);
