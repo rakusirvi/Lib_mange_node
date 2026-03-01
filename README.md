@@ -68,3 +68,18 @@ GET:get all issued books with their Amount
 #### npm i
 
 #### npm run dev
+
+npm i mongoose
+npm i mongodb
+npm i dotenv
+
+### MVC Architecture
+
+> > M : Model. (tell's the Structure of our mongoDb)
+> > V : View. (Fontend )
+> > C : Contoller. (Brain and the Logic of the Route)
+
+for Forigen Key in model (user Model)
+type : mongoose.Schema.Type.ObjectId,
+
+### DTO Data Transfer Object
